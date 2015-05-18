@@ -1,0 +1,238 @@
+extends layout
+block content
+  #pHeader
+    .row
+      .col-lg-1.col-md-1.col-sm-0.col-xs-0
+      //- creates space to center main part of page, reduces to zero on smaller screens
+      .col-lg-10.col-md-10.col-sm-12.col-xs-12.col-centered
+        p.text-right
+          a(href='/routes/users') sign in
+          |  | 
+          a(href='/routes/users') sign up
+      .col-lg-1.col-md-1.col-sm-0.col-xs-0
+      //- creates space to center main part of page, reduces to zero on smaller screens
+    .row
+      .col-lg-1.col-md-1.col-sm-0.col-xs-0
+      //- creates space to center main part of page, reduces to zero on smaller screens
+      //- logo and buttons on header row are here
+      #cHeader.col-lg-10.col-md-10.col-sm-12.col-xs-12.col-centered
+        img#topLogo.moveLeft.col-lg-4.col-md-4.col-sm-6.col-xs-8(src='img/savings-multiplied-logo.png')
+        #placeHolder.col-lg-8.col-md-8.col-sm-6.col-xs-0.moveRight
+        #topButtons.col-lg-7.col-md-7.col-sm-6.col-xs-12.moveRight
+          ul#ulButtons.btn-group.col-lg-12.col-md-12.col-sm-12.col-xs-12
+            li.spaceButtons.col-lg-3.col-md-3.col-sm-3.col-xs-3
+              button#btnAbout.btn.col-lg-12.col-md-12.col-sm-12.col-xs-12(type='button') About
+            li.spaceButtons.col-lg-3.col-md-3.col-sm-3.col-xs-3
+              button#btnContact.btn.col-lg-12.col-md-12.col-sm-12.col-xs-12(type='button') Contact
+            li.spaceButtons.col-lg-3.col-md-3.col-sm-3.col-xs-3
+              button#btnBlog.btn.col-lg-12.col-md-12.col-sm-12.col-xs-12(type='button') Blog
+            li.spaceButtons.col-lg-3.col-md-3.col-sm-3.col-xs-3
+              button#btnPress.btn.col-lg-12.col-md-12.col-sm-12.col-xs-12(type='button') Press
+        img.moveRight.col-lg-7.col-md-6.col-sm-6.col-xs-12(src='img/tagline.png')
+      //- closes cHeader div
+      .col-lg-1.col-md-1.col-sm-0.col-xs-0
+      //- creates space to center main part of page, reduces to zero on smaller screens
+    //- closes row div
+  //- closes pHeader div
+  #pNavigation
+    .row
+      nav#cNav.navbar.navbar-default.col-lg-10.col-md-10.col-sm-12.brd(role='navigation')
+        //- Where the toggle gets grouped for better mobile display
+        #cTest.navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-ex1-collapse')
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+        //- Navigation Menu Items are here
+        .collapse.navbar-collapse.navbar-right.navbar-ex1-collapse
+          ul.nav.navbar-nav
+            li
+              a(href='#') Buy
+            li
+              a(href='#') Sell
+            li
+              a(href='#') How it Works
+            li
+              a(href='#') Links
+            li
+              a(href='#') Community
+            li
+              form.navbar-form.navbar-right(role='search')
+                .form-group
+                  input#search.form-control(type='text', placeholder='Search')
+    //- closes row div
+  //- closes pNaviation div
+  #pBody
+    .row
+      .col-lg-1.col-md-1.col-sm-0.col-xs-0
+      //- creates space to center main part of page, reduces to zero on smaller screens
+      #cBody.col-lg-10.col-md-10.col-sm-12.col-xs-12.col-centered
+        .row
+          #leftAuction.moveLeft.col-lg-3.col-md-3.col-sm-12.col-xs-12.col-centered
+            #aucSearch.col-lg-12.col-md-12.col-sm-12.col-xs-12
+              div
+                | Limit your search by:
+                hr
+              div
+                input.f(type='text', placeholder='Search')
+                button.btn(type='button')
+                  | search
+            #aucCondition.radio.col-lg-12.col-md-12.col-sm-12.col-xs-12
+              div Condition:
+              div
+                label.radio
+                  input#inlineRadio1(type='radio', name='Condition', value='option1')
+                  |  New
+                label.radio
+                  input#inlineRadio2(type='radio', name='Condition', value='option2')
+                  |  Gently Used
+            //- closes aucCondition radio buttons
+            #aucSize.col-lg-12.col-md-12.col-sm-12.col-xs-12
+              div
+                | Size:
+                br
+              .radio
+                label.radio-inline
+                  input#inlineRadio1(type='radio', name='Size', value='option1')
+                  |  4
+                label.radio-inline
+                  input#inlineRadio2(type='radio', name='Size', value='option2')
+                  |  8
+              .radio
+                label.radio-inline
+                  input#inlineRadio3(type='radio', name='Size', value='option3')
+                  |  5
+                label.radio-inline
+                  input#inlineRadio4(type='radio', name='Size', value='option4')
+                  |  9
+              .radio
+                label.radio-inline
+                  input#inlineRadio5(type='radio', name='Size', value='option5')
+                  |  6
+                label.radio-inline
+                  input#inlineRadio6(type='radio', name='Size', value='option6')
+                  |  10
+              .radio
+                label.radio-inline
+                  input#inlineRadio7(type='radio', name='Size', value='option7')
+                  |  7
+                label.radio-inline
+                  input#inlineRadio8(type='radio', name='Size', value='option8')
+                  |  11
+            //- closes aucSize radio buttons
+            #aucSeason.col-lg-12.col-md-12.col-sm-12.col-xs-12
+              div
+                | Season:
+                br
+              .radio
+                label.radio
+                  input#inlineRadio1(type='radio', name='Season', value='option1')
+                  |  All Seasons
+                label.radio
+                  input#inlineRadio2(type='radio', name='Season', value='option2')
+                  |  Spring
+                label.radio
+                  input#inlineRadio3(type='radio', name='Season', value='option3')
+                  |  Summer
+                label.radio
+                  input#inlineRadio4(type='radio', name='Season', value='option4')
+                  |  Fall
+                label.radio
+                  input#inlineRadio5(type='radio', name='Season', value='option5')
+                  |  Winter
+            //- closes aucSeason radio buttons
+            #aucSeason.col-lg-12.col-md-12.col-sm-12.col-xs-12
+              div
+                | Type:
+                br
+              .radio
+                label.radio
+                  input#inlineRadio1(type='radio', name='Type', value='option1')
+                  |  Any
+                label.radio
+                  input#inlineRadio2(type='radio', name='Type', value='option2')
+                  |  One-Piece
+                label.radio
+                  input#inlineRadio3(type='radio', name='Type', value='option3')
+                  |  Tops
+                label.radio
+                  input#inlineRadio4(type='radio', name='Type', value='option4')
+                  |  Bottoms
+            //- closes aucType radio buttons
+            //- Single button
+            #aucBrand.col-lg-12.col-md-12.col-sm-12.col-xs-12
+              div Brand:
+              div
+                select(name='Brand')
+                  option(value='value1') Janie and Jack
+                  option(value='value2') Old Navy
+                  option(value='value3') Roth&apos;s Child
+                  option(value='value3') Garanimals
+                  option(value='value3') Burberry
+                  option(value='value3') Osh Kosh B&apos;Gosh
+            //- closes aucBrand div
+          //- closes left Auction div
+          #rightAuction.moveRight.col-lg-9.col-md-9.col-sm-12.col-xs-12
+            .row
+              #breadCr.col-lg-12.col-md-12.col-sm-12.col-xs-12.moveLeft
+                .bs-example
+                  ul.breadcrumb
+                    li
+                      a.Bcrumb(href='#') All
+                    li
+                      a.Bcrumb(href='#') Twin
+                    li.Bcrumb B/G
+                //- closes div bs-example
+              //- closes div moveLEft
+            //- closes div row
+            .row
+              .col-lg-3.col-md-3.col-sm-3.col-xs-3.moveLeft
+                form.inline
+                  label#label sort by:
+                  select
+                    option.inline(value='price') price
+                    option.inline(value='') item
+              //- closes div moveLeft
+              .col-lg-4.col-md-4.col-sm-4.col-xs-4
+              .col-lg-4.col-md-4.col-sm-4.col-xs-4
+                p.inline  pre. | page num. | next | view all
+            //- closes out the row
+            #theStuff.row
+          //- closes right Body div
+        //- closes row
+      //-
+        closes cBody div
+        <div class="col-lg-1 col-md-1 col-sm-0 col-xs-0"></div>	<!-- creates space to center main part of page, reduces to zero on smaller screens
+    //- closes row div
+  //- closes pBody div
+  #pFooter
+    #cFooter.col-lg-12.col-md-12.col-sm-12.col-xs-12.col-centered
+      p.text-center
+        a.footerLinks(href='#') Link Here 
+        | |
+        a.footerLinks(href='#') Link Here 
+        | |
+        a.footerLinks(href='#') Link Here 
+        | |
+        a.footerLinks(href='#') Link Here 
+        | |
+        a.footerLinks(href='#') Link Here 
+        | |
+        a.footerLinks(href='#') Link Here 
+        br
+        br
+        br
+        br
+        br
+        br
+        br
+  //- closes pFooter
+  script(src='//code.jquery.com/jquery-1.11.2.min.js')
+  script(src='//code.jquery.com/jquery-migrate-1.2.1.min.js')
+  script(src='js/jquery.js')
+  script(src='js/bootstrap.js')
+  script(src='js/main.js')
+  //- if lt IE 9
+    script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
+    script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')

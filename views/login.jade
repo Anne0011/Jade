@@ -1,0 +1,20 @@
+extends layout
+block content
+  head
+    title Savings Multiplied Login 
+    link(rel='stylesheet', href='/stylesheets/main.css')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+  h1 Welcome to Savings Multiplied
+  h3
+    | Please log in below or  
+    a(href='/users/register') register
+    |  for a new account
+  form#loginForm(method='POST', action='/users/login')
+    .formfield
+      .formfield--prompt Username:
+      input#username(type='text', name='username')
+    .formfield
+      .formfield--prompt Password:
+      input#password(type='password', name='password')
+    input.submitButton(type='submit')
+  #loginError

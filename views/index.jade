@@ -1,0 +1,140 @@
+extends layout
+block content    
+  #pHeader
+    .row
+      .col-lg-1.col-md-1.col-sm-0.col-xs-0
+      //- creates space to center main part of page, reduces to zero on smaller screens
+      .col-lg-10.col-md-10.col-sm-12.col-xs-12.col-centered
+        p.text-right
+          a(href='/users/login') sign in
+          |  | 
+          a(href='/users/user') sign up
+      .col-lg-1.col-md-1.col-sm-0.col-xs-0
+      //-  creates space to center main part of page, reduces to zero on smaller screens
+    .row
+      .col-lg-1.col-md-1.col-sm-0.col-xs-0
+      //- creates space to center main part of page, reduces to zero on smaller screens
+      //- logo and buttons on header row are here
+      #cHeader.col-lg-10.col-md-10.col-sm-12.col-xs-12.col-centered
+        img#topLogo.moveLeft.col-lg-4.col-md-4.col-sm-6.col-xs-8(src='img/savings-multiplied-logo.png')
+        #placeHolder.col-lg-8.col-md-8.col-sm-6.col-xs-0.moveRight
+        #topButtons.col-lg-7.col-md-7.col-sm-6.col-xs-12.moveRight
+          ul#ulButtons.btn-group.col-lg-12.col-md-12.col-sm-12.col-xs-12
+            li.spaceButtons.col-lg-3.col-md-3.col-sm-3.col-xs-3
+              button#btnAbout.btn.col-lg-12.col-md-12.col-sm-12.col-xs-12(type='button') About Me
+            li.spaceButtons.col-lg-3.col-md-3.col-sm-3.col-xs-3
+              button#btnContact.btn.col-lg-12.col-md-12.col-sm-12.col-xs-12(type='button') Contact Me
+            li.spaceButtons.col-lg-3.col-md-3.col-sm-3.col-xs-3
+              button#btnBlog.btn.col-lg-12.col-md-12.col-sm-12.col-xs-12(type='button') Blog
+            li.spaceButtons.col-lg-3.col-md-3.col-sm-3.col-xs-3
+              button#btnPress.btn.col-lg-12.col-md-12.col-sm-12.col-xs-12(type='button') Press
+        img.moveRight.col-lg-7.col-md-6.col-sm-6.col-xs-12(src='img/tagline.png')
+      //- closes cHeader div
+      .col-lg-1.col-md-1.col-sm-0.col-xs-0
+      //- creates space to center main part of page, reduces to zero on smaller screens
+  //- closes row div
+  //-  closes pHeader div
+  #pNavigation
+    .row
+      nav#cNav.navbar.navbar-default.col-lg-10.col-md-10.col-sm-12.brd(role='navigation')
+        //- Where the toggle gets grouped for better mobile display
+        #cTest.navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-ex1-collapse')
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+       
+        .collapse.navbar-collapse.navbar-right.navbar-ex1-collapse
+          ul.nav.navbar-nav
+            li
+              a(href='./view/auction.jade') Buy
+            li
+              a(href='#') Sell
+            li
+              a(href='#') How it Works
+            li
+              a(href='#') Links
+            li
+              a(href='#') Community
+            li
+              form.navbar-form.navbar-right(role='search')
+                .form-group
+                  input#search.form-control(type='text', placeholder='Search')
+  //- closes row div
+  //- closes pNaviation div
+  #pBody
+    .row
+      .col-lg-1.col-md-1.col-sm-0.col-xs-0
+      //- creates space to center main part of page, reduces to zero on smaller screens
+      #cBody.col-lg-10.col-md-10.col-sm-12.col-xs-12.col-centered
+        .row
+          .moveLeft.col-lg-6.col-md-6.col-sm-12.col-xs-12.col-centered
+            first We&apos;re making one aspect of life easier for parents of multiples:
+            br
+            img(src='img/homepage/owl_44_44.png')
+            second buying and selling gently used sets of clothes!
+            br
+            br
+            .row
+              .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                a(href='auction.html')
+                  img#shopNow(src='img/homepage/left_2_shop_now.png')
+            br
+            .row
+              .moveRight.col-lg-12.col-md-12
+                img.moveRight.col-lg-4.col-md-4.col-xs-1.col-sm-1(src='img/homepage/tree.png')
+          //- closes left Body div
+          .moveRight.col-lg-6.col-md-6.col-sm-1.col-xs-1
+            img.children(src='img/children/twins.jpg')
+            br
+            br
+            img.children(src='img/children/triplets.jpg')
+            br
+            br
+            img.children(src='img/children/quads.jpg')
+          //- closes right Body div
+        //- closes row
+        .repeatSomething
+        //- closes reapeatSomething
+        #social.col-lg-12.col-md-12.col-sm-12.col-xs-12
+          ul#ulSocial.col-lg-12.col-md-12.col-sm-12.col-xs-12
+            li.spaceSocial.col-lg-3.col-md-3.col-sm-3.col-xs-3
+              img.spaceSocial(src='img/homepage/facebook_callout.png')
+            li.spaceSocial.col-lg-3.col-md-3.col-sm-3.col-xs-3
+              img.spaceSocial(src='img/homepage/twitter_callout.png')
+            li.spaceSocial.col-lg-3.col-md-3.col-sm-3.col-xs-3
+              img.spaceSocial(src='img/homepage/message_board_callout.png')
+            li.spaceSocial.col-lg-3.col-md-3.col-sm-3.col-xs-3
+              img.spaceSocial(src='img/homepage/special_offers_callout.png')
+      //- closes cBody div
+      .col-lg-1.col-md-1.col-sm-0.col-xs-0
+      //- creates space to center main part of page, reduces to zero on smaller screens
+    //- closes row div
+  //- closes pBody div
+  #pFooter
+    #cFooter.col-lg-12.col-md-12.col-sm-12.col-xs-12.col-centered
+      p.text-center
+        a.footerLinks(href='#') Link Here 
+        | |
+        a.footerLinks(href='#') Link Here 
+        | |
+        a.footerLinks(href='#') Link Here 
+        | |
+        a.footerLinks(href='#') Link Here 
+        | |
+        a.footerLinks(href='#') Link Here 
+        | |
+        a.footerLinks(href='#') Link Here 
+        br
+        br
+        br
+        br
+        br
+        br
+        br
+  script(src='js/jquery.js')
+  script(src='js/bootstrap.js')
+  //- if lt IE 9
+    script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
+    script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')

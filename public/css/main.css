@@ -1,0 +1,202 @@
+
+.col-centered{
+    margin: 0 auto;
+}
+
+.moveRight{
+	float: right;
+	padding: 1em;
+}
+
+.moveLeft{
+	float: left;
+	padding: 1em;
+}
+
+#pHeader{
+	background-color: #D5F1F0;
+	padding: 2em 0 0 0;
+}
+
+#cNav, #pNavigation{
+	background-color: #F3CECD;
+	font-family: 'Corben';
+	font-weight: 600;
+	color: #71234A;
+}
+
+
+body, #pBody, #pFooter{
+	background-color: #75CBD2;	
+	padding: 0;
+	margin:0;
+}
+
+#cBody{
+	border-radius: 0 0 30px 30px;
+	background-color: white;
+	padding: 1.5em;
+
+}
+
+.navbar .nav > li > a {
+	color: #6C2146;
+}
+
+.navbar .nav > li > form div  input {
+	color: #6C2146;
+}
+
+first{
+	font-size: 1.5em;
+	font-family: 'Corben', bold;
+	font-weight: 800;
+	color: #88B223;
+}
+
+second{
+	font-size: 1.5em;
+	color: #76CBD1;
+
+}
+
+#cHeader{
+	border-radius: 30px 30px 0 0;
+	background-color: white;
+
+}
+
+#cFooter{
+	color: white;
+}
+
+#cFooter a{
+	padding: 0;
+	color: white;
+
+}
+
+
+.navbar-default{
+	border: none;
+	float: none;
+    margin: 0 auto;
+
+}
+
+li{
+	margin: 0 .3em;
+
+}
+
+
+.children{
+	width: 100%;
+	float: none;
+	margin: 0 auto;
+	padding: 0 4em;
+}
+
+
+#topLogo{
+	margin-top: -50px;
+}
+
+.repeatSomething{
+	background-image: url("../img/homepage/dotted_line_44x9.png");
+	background-repeat: repeat-x;
+	height: 10px;
+}
+
+.footerLinks{
+	margin: 0 1.5em;
+}
+
+.row{
+	margin:0;
+}
+
+.spaceSocial{
+	list-style: none;
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+
+.spaceSocial img{
+	width:100%;
+}
+
+#topButtons{
+	padding: 0;
+	margin: 0;
+}
+
+.spaceButtons{
+	list-style: none;
+	display: inline;
+	padding: 0;
+	margin: 0;
+	color: white;
+}
+
+.btn{
+	border-radius: 25px;
+}
+
+
+#btnAbout{
+	background-color: #76CBD1;
+}
+
+#btnContact{
+	background-color: #88B526;
+}
+
+#btnBlog{
+	background-color: #70308D;
+}
+
+#btnPress{
+	background-color: #EC4E8C;
+}
+
+#shopNow{
+	width: 100%;
+}
+
+#leftAuction{
+	background-color: #EDFAD1;
+	border-radius: 25px;
+	color: #97AF3F;
+}
+
+#rightAuction{
+	background-color: ;
+}
+
+.Bcrumb {
+	color: #88B526;
+}
+.inline {color: #88B526;
+		 text-align: right;
+		 }
+#label{color: #88B526;}
+
+.stuffs{
+	background-color: #EDFAD1;
+	margin: 0px;
+	padding: 10px;
+	text-align: center;
+}
+
+.stuffs img{
+	width: 125px;
+	height: 125px;
+
+}
+.breadCr {
+	background-color: white;
+}
+
